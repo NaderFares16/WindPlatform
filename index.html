@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/chedros" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bem-vindo(a) ao Wind©</title>
+</head>
+<body>
+    <div class="ribbon">
+        <p>Economize até 80% em Jogos — A oferta termina no dia 1 de novembro. Confira nosso <span style="text-decoration: underline; cursor: pointer;">Guia de Compras para Jogadores</span></p>
+    </div>
+    <nav>
+        <div style="display: flex; gap: 2rem;">
+            <div class="brand">
+                <a href="index.html"><img id="brand" src="./assets/brand.svg" alt="Wind©"></a>
+                <ion-icon id="brand-chevron" name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="page-sections">
+                <p class="brand-title">WIND</p>
+                <a href="#">Loja</a>
+                <a style="display: flex; gap: 4px; align-items: center;" href="#">Categorias <ion-icon style="font-size: 14px;" id="brand-chevron" name="chevron-down-outline"></ion-icon></a>
+                <a href="#">Suporte</a>
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <ion-icon name="globe-outline"></ion-icon>
+            <button class="sign-in">Entrar</button>
+            <button class="download-wind">Instale o Wind</button>
+        </div>
+    </nav>
+    <div class="dock">
+        <div>
+            <ion-icon id="search-icn" name="search-outline"></ion-icon>
+            <input id="search" type="search" placeholder="Pesquisar">
+        </div>
+        <div class="dock-pages">
+            <a id="d-select" href="#">Descobrir</a>
+            <a href="#">Tendências</a>
+            <a href="#">Recomendados</a>
+            <a href="#">Loja de Pontos</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="highlights">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="./assets/gta6.jpg" alt="Grand Theft Auto VI">
+                    <img src="./assets/fc6.jpg" alt="Far Cry 6">
+                    <img src="./assets/rdr2.jpeg" alt="Red Dead Redemption II">
+                    <img src="./assets/fh4.jpg" alt="Forza Horizon 4">
+                    <img src="./assets/snbz.jpeg" alt="Subnautica Below Zero">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-logo">
+                    <img id="brand" src="./assets/brand.svg" alt="Wind©">
+                    <span id="separator"></span>
+                    <p class="brand-title">WIND</p>
+                </div>
+                <p>Inicie a sessão para ver mais recomendações personalizadas</p>
+                <div id="line"> </div>
+                <div class="card-input">
+                    <p>E-mail</p>
+                    <input type="email" placeholder="Endereço de E-mail">
+                </div>
+                <div class="card-input">
+                    <p>Senha</p>
+                    <input type="password" placeholder="Senha">
+                </div>
+                <div class="submit-card">
+                    <a class="forgot-a" href="#">Esqueceu sua senha?</a>
+                    <button type="submit">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
