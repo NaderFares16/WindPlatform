@@ -9,11 +9,23 @@
 body {
     width: 100vw;
     min-height: 100vh;
-    background-color: #101014;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+}
+
+/* COLORS */
+
+:root {
+    --background-color: #101014;
+    --foreground-color: #121216;
+
+    --primary-color: #4e1bc5;
+
+    --text-color: #fafafa;
+    --second-text-color: #8f8f91;
 }
 
 /* RIBBON */
@@ -21,11 +33,11 @@ body {
 .ribbon {
     width: 100vw;
     height: 2rem;
-    background-color: #4e1bc5;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fafafa;
+    color: var(--text-color);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 14px;
@@ -36,7 +48,7 @@ body {
 nav {
     width: 100%;
     height: 4.5rem;
-    background-color: #121216;
+    background-color: var(--foreground-color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,7 +67,7 @@ nav {
 
 .brand-title {
     font-family: 'CHEDROS', sans-serif;
-    color: #fafafa;
+    color: var(--text-color);
     font-size: 28px;
     margin-top: 5px;
     letter-spacing: 1.5px;                             
@@ -71,7 +83,7 @@ nav {
 }
 
 #brand-chevron {
-    color: #fafafa;
+    color: var(--text-color);
     font-size: 14px;
 }
 
@@ -83,7 +95,7 @@ nav {
 
 .page-sections > a {
     text-decoration: none;
-    color: #fafafa;
+    color: var(--text-color);
     padding: 4px 8px;
     border-radius: 1rem;
     transition: ease 300ms;
@@ -102,7 +114,7 @@ nav {
 }
 
 .nav-buttons > ion-icon {
-    color: #fafafa;
+    color: var(--text-color);
     font-size: 24px;
     transition: ease 200ms;
     cursor: pointer;
@@ -120,7 +132,7 @@ nav {
     font-weight: 500;
     font-size: 14px;
     background-color: #353539;
-    color: #fafafa;
+    color: var(--text-color);
     cursor: pointer;
     transition: ease 200ms;
 }
@@ -137,13 +149,13 @@ nav {
     font-weight: 500;
     font-size: 14px;
     background-color: #3a0ca3;
-    color: #fafafa;
+    color: var(--text-color);
     cursor: pointer;
     transition: ease 200ms;
 }
 
 .download-wind:hover {
-    background-color: #4e1bc5;
+    background-color: var(--primary-color);
 }
 
 /* CONTAINER */
@@ -160,7 +172,7 @@ nav {
 }
 
 #search-icn {
-    color: #fafafa;
+    color: var(--text-color);
     position: relative;
     top: 3.5px;
     left: 36px;
@@ -174,7 +186,7 @@ nav {
     border: none;
     border-radius: 32px;
     font-size: 14px;
-    color: #fafafa;
+    color: var(--text-color);
     padding-left: 2.5rem;
     outline: none;
     transition: ease 200ms;
@@ -197,7 +209,7 @@ nav {
 
 .dock-pages > a {
     text-decoration: none;
-    color: #8f8f91;
+    color: var(--second-text-color);
     padding: 6px 10px;
     border-radius: 10px;
     transition: ease 200ms;
@@ -209,7 +221,7 @@ nav {
 }
 
 #d-select {
-    color: #fafafa;
+    color: var(--text-color);
     background-color: #28282c;
 }
 
@@ -248,7 +260,7 @@ nav {
 
 .card > p{
     text-align: center;
-    color: #8f8f91;
+    color: var(--second-text-color);
 }
 
 .card-input {
@@ -268,7 +280,7 @@ nav {
     font-size: 14px;
     outline: none;
     padding-left: 1rem;
-    color: #FAFAFA;
+    color: var(--text-color);
 }
 
 .card-input > p {
@@ -295,18 +307,18 @@ nav {
     font-weight: 500;
     font-size: 14px;
     background-color: #3a0ca3;
-    color: #fafafa;
+    color: var(--text-color);
     cursor: pointer;
     transition: ease 200ms;
 }
 
 .submit-card > button:hover {
-    background-color: #4e1bc5;
+    background-color: var(--primary-color);
 }
 
 .submit-card > a {
     text-decoration: none;
-    color: #8f8f91;
+    color: var(--second-text-color);
     font-size: 13px;
 }
 
@@ -396,9 +408,13 @@ nav {
     font-weight: 500;
     font-size: 14px;
     background-color: #353539;
-    color: #fafafa;
+    color: var(--text-color);
     cursor: pointer;
     transition: ease 200ms;
+}
+
+.free-top > button:hover {
+    background-color: #404044;
 }
 
 .free-top > div {
@@ -432,6 +448,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: start;
+    cursor: pointer;
     transition: ease 200ms;
 }
 
@@ -443,13 +460,13 @@ nav {
 .free-item > h1 {
     font-size: 18px;
     font-weight: 600;
-    color: #fafafa;
+    color: var(--text-color);
     margin: 1rem 0px 0rem;
 }
 
 .free-item > p {
     font-size: 16px;
-    color: #8f8f91;
+    color: var(--second-text-color);
     margin: 0.5rem 0px;
 }
 
@@ -465,12 +482,12 @@ nav {
 #badge {
     width: 100%;
     height: 28px;
-    background-color: #4e1bc5;
+    background-color: var(--primary-color);
     border-radius: 0px 0px 8px 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FAFAFA;
+    color: var(--text-color);
     font-size: 13px;
     font-weight: 600;
 }
@@ -483,7 +500,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FAFAFA;
+    color: var(--text-color);
     font-size: 13px;
     font-weight: 600;
 }
@@ -543,9 +560,13 @@ nav {
     font-weight: 500;
     font-size: 14px;
     background-color: #353539;
-    color: #fafafa;
+    color: var(--text-color);
     cursor: pointer;
     transition: ease 200ms;
+}
+
+.ex-top > button:hover {
+    background-color: #404044;
 }
 
 .ex-container {
@@ -572,7 +593,7 @@ nav {
     width: max-content;
     padding: 2px 4px;
     background-color: #202024;
-    color: #FAFAFA;
+    color: var(--text-color);
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
@@ -594,12 +615,12 @@ nav {
 .ex-item > h1 {
     font-size: 18px;
     font-weight: 600;
-    color: #fafafa;
+    color: var(--text-color);
 }
 
 .ex-item > p {
     font-size: 16px;
-    color: #8f8f91;
+    color: var(--second-text-color);
     margin: 0.5rem 0px 0px;
 }
 
@@ -663,9 +684,13 @@ nav {
     font-weight: 500;
     font-size: 14px;
     background-color: #353539;
-    color: #fafafa;
+    color: var(--text-color);
     cursor: pointer;
     transition: ease 200ms;
+}
+
+.ctg-top > button:hover {
+    background-color: #404044;
 }
 
 .ctg-container {
@@ -687,7 +712,7 @@ nav {
     border-radius: 16px;
     background-color: #28282c;
     text-decoration: none;
-    color: #FAFAFA;
+    color: var(--text-color);
     text-transform: uppercase;
     font-weight: 600;
     transition: ease 200ms;
@@ -727,7 +752,7 @@ footer {
 .topic > p {
     font-weight: 600;
     font-size: 20px;
-    color: #fafafa;
+    color: var(--text-color);
 }
 
 .topic > div {
@@ -738,7 +763,7 @@ footer {
 
 .topic > div > a {
     text-decoration: none;
-    color: #8f8f91;
+    color: var(--second-text-color);
     font-size: 15px;
 }
 
@@ -749,7 +774,7 @@ footer {
 #copyright-p {
     width: 50%;
     font-size: 13.5px;
-    color: #8f8f91;
+    color: var(--second-text-color);
     line-height: 1.6;
     margin-top: 1rem 0px;
 }
@@ -761,7 +786,7 @@ footer {
 }
 
 .terms > a {
-    color: #8f8f91;
+    color: var(--second-text-color);
     font-size: 13.5px;
 }
 
