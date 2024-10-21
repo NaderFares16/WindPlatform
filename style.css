@@ -28,6 +28,39 @@ body {
     --second-text-color: #8f8f91;
 }
 
+/* RETURN BUTTON */
+
+.scrollToTopBtn {
+    width: 48px;
+    height: 48px;
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    background-color: #28282c;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: ease 200ms;
+}
+
+/* Efeito de hover no botão */
+.scrollToTopBtn:hover {
+    background-color: #404044;
+}
+
+.scrollToTopBtn.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scrollToTopBtn.hide {
+    opacity: 0;
+    transform: translateY(100px); /* Desce suavemente */
+}
+
 /* RIBBON */
 
 .ribbon {
