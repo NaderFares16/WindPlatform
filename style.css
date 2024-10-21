@@ -13,8 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
     touch-action: manipulation;
+    overflow-x: hidden;
 }
 
 /* COLORS */

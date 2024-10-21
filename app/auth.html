@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://fonts.cdnfonts.com/css/chedros" rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/app/auth.css">
+  <title>Entrar na sua conta do Wind©</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="card-top">
+        <div class="card-logo">
+          <img id="brand" src="/assets/brand.svg" alt="Wind©">
+          <span id="separator"></span>
+          <p class="brand-title">WIND<span style="font-size: 10px;">©</span></p>
+        </div>
+        <div class="card-title">Iniciar Sessão</div>
+      </div>
+      <div class="login-box">
+        <form id="loginForm">
+          <div class="input-group">
+              <input type="text" id="email" placeholder="Endereço de E-mail" required>
+          </div>
+          <div class="input-group">
+              <input type="password" id="password" placeholder="Senha" required>
+          </div>
+          <div class="forgot"><a id="forgot" href="#">Esqueceu sua senha?</a></div>
+          <button type="submit" class="btn">Entrar</button>
+        </form>
+      </div>
+      <div class="card-bottom">
+        <div id="line">
+          <p>ENTRAR COM</p>
+        </div>
+        <div class="methods">
+          <a class="m-btn" href="#">
+            <img style="position: relative; bottom: 2px; width: 24px;" src="/assets/company/apple.svg" alt="apple">
+          </a>
+          <a class="m-btn" href="#">
+            <img style="position: relative; bottom: 3.9px; width: 40px;" src="/assets/company/ubisoft.svg" alt="apple">
+          </a>
+          <a style="background-color: #e60012;" class="m-btn" href="#">
+            <img style="position: relative; bottom: px; width: 58px;" src="/assets/company/nintendo.svg" alt="apple">
+          </a>
+        </div>
+        <p style="text-align: center; margin: 1rem 0px 1rem; cursor: pointer; color: #8f8f96; font-size: 12px; font-weight: 600; text-transform: uppercase;">Criar Conta</p>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+    <script type="module" src="/app/auth.js"></script>
+</body>
+</html>
