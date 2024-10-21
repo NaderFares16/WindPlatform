@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    touch-action: manipulation;
 }
 
 /* COLORS */
@@ -43,6 +44,7 @@ body {
     border-radius: 2rem;
     cursor: pointer;
     transition: ease 200ms;
+    z-index: 10;
 }
 
 /* Efeito de hover no botão */
@@ -727,6 +729,10 @@ nav {
     background-position: -25px;
 }
 
+.mobile-dock {
+    display: none;
+}
+
 /* CATEGORIES */
 
 .categories {
@@ -890,7 +896,7 @@ footer {
 
     .sign-in {
         display: none;
-    } 
+    }
 
     .dock {
         display: none;
@@ -900,13 +906,48 @@ footer {
         display: none;
     }
 
+    .mobile-dock {
+        width: 100%;
+        height: max-content;
+        background-color: var(--background-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 16px 0px;
+    }
+
+ #search-ion{
+        top: 5px;
+        left: 36px;
+        position: relative;
+    }
+
+    #search-box {
+        width: 300px;
+        height: 40px;
+        background-color: #353539;
+        border: none;
+        border-radius: 32px;
+        font-size: 14px;
+        color: var(--text-color);
+        padding-left: 2.5rem;
+        outline: none;
+        transition: ease 200ms;
+        margin-right: 1.5rem;
+    }
+
+    .mobile-dock > div > a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
     .carousel-container {
         width: 100%;
     }
 
     .highlights {
         flex-direction: column;
-        padding: 16px;
+        padding: 0px 16px 16px;
     }
 
     .card {
