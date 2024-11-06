@@ -34,3 +34,4 @@ Este projeto foi desenvolvido com o objetivo de praticar habilidades de frontend
 - Criação de layouts responsivos.
 - Desenvolvimento de interfaces de usuário modernas e intuitivas.
 - Aplicação de boas práticas em **HTML**, **CSS** e **JavaScript**.
+- GitHub Achivement YOLO
